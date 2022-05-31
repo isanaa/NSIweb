@@ -46,6 +46,27 @@
   <form>
     <select name="nom" size="1">
       <option> Paul
-      <option> Pierre
-</body>
+      <option> Pierre </option>  
+    </select>
+    <p> Vous aimez les ...</p>
+    <div>
+      <input type="checkbox" id="poires" value="poires">
+      <label for="scales">poires</label>
+     </div>
+    <div>
+      <input type="checkbox" id="pommes" value="pommes">
+      <label for="scales">pommes</label>
+    </div>
+    <button>Valider</button>
+    <script type="javascript">
+    let b1=document.querySelector("button");
+b1.addEventListener("click",function(){alert("Merci !")});
+    function recap(){
+    console.log(document.getElementById("Pommes").value);
+    console.log(document.getElementById("Pommes").checked);
+    document.getElementById("res").innerHTML=document.getElementById("pommes").value"+""+"document.getElementById("Pommes).checked;
+    }
+    </script>
+  </form>
+ </body>
 </html>
